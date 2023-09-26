@@ -1,0 +1,71 @@
+{
+    "saturday": [
+        {
+            "time": "12:00",
+            "name": "Walk-in",
+            "description": "We will welcome you in hall X1 of TU Delft X! You then have a bit of time to get settled in before the hacking starts."
+        },
+        {
+            "time": "13:00",
+            "name": "Opening Presentation",
+            "description": "Here you will finally be introduced to the challenges, and get other important information about the event. If you don't have a team yet, you can form it here."
+        },
+        {
+            "time": "14:00",
+            "name": "Start Hacking!",
+            "description": "After the challenges have been divided you can now get started on your project. We are excited to see what you will come up with!"
+        },
+        {
+            "time": "± 17:00",
+            "name": "Workshop - Elastic",
+            "description": "In this workshop Elastic will give an introduction to their platform, and how you can use it for your project."
+        },
+        {
+            "time": "18:30 - 20:00",
+            "name": "Dinner",
+            "description": ""
+        }
+    ],
+    "sunday": [
+        {
+            "time": "7:00",
+            "name": "Morning Gymnastics",
+            "description": "Get a fresh start of the day with Cas and Berend"
+        },
+        {
+            "time": "8:00 - 10:00",
+            "name": "Breakfast",
+            "description": ""
+        },
+        {
+            "time": "± 10:00",
+            "name": "Workshop - Bit",
+            "description": "Our supporting partner Bit has a talk prepared!"
+        },
+        {
+            "time": "± 12:00",
+            "name": "Pitch Workshop",
+            "description": "De Kleine Consultant will come and prepare you for your pitch at 14:00!"
+        },
+        {
+            "time": "12:30 - 14:30",
+            "name": "Lunch",
+            "description": ""
+        },
+        {
+            "time": "14:00",
+            "name": "Hacking Ends",
+            "description": "It has been 24 hours since we started! Now it's time to pitch your project to the jury."
+        },
+        {
+            "time": "14:30",
+            "name": "Networking Drinks",
+            "description": "Talk to your fellow hackers at the drinks after the hacking has ended."
+        },
+        {
+            "time": "± 16:00",
+            "name": "Award Ceremony",
+            "description": "We have a lot of prizes to award here, maybe to you?"
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+[
+    {
+        "question": "Who can attend?",
+        "answer": "Any current university student can attend HackDelft."
+    },
+    {
+        "question": "How can I sign up for HackDelft?",
+        "answer": "Unfortunately we are completely sold out! Use the button on top of the page to sign up for the waiting list."
+    },
+    {
+        "question": "What languages can I use during the event?",
+        "answer": "You can use any language or tool you want during the event!"
+    },
+    {
+        "question": "What is the maximum group size?",
+        "answer": "There is a limit of four participants per group. Do you have more friends? You can join in multiple groups! Don't know who joins you yet? You can form your groups later, or even at the event itself."
+    },
+    {
+        "question": "What if I've never been to a hackathon before?",
+        "answer": "HackDelft is a very beginner friendly hackathon, so that is no issue! At the start of the hackathon we will explain how the weekend works, after which you can start hacking with your team."
+    },
+    {
+        "question": "Can I still participate if I am not a programmer?",
+        "answer": "Yes! We have some challenges specifically designed for you. These challenges don't require a lot of programming experience, and are more focused on mathematics."
+    },
+    {
+        "question": "Can I start working on my submission before the event begins?",
+        "answer": "No, this is not allowed. The challenges will also not be announced before the event starts."
+    },
+    {
+        "question": "How much will it cost to attend HackDelft?",
+        "answer": "The price has been set at 1,- for the entire weekend. In return you can hack away all weekend, get three meals, and much more!"
+    },
+    {
+        "question": "What do I need to bring to the event?",
+        "answer": "You will have to bring your laptop, some chargers, and an air mattress with sleeping bag if you intent to sleep. Some hygiene items will also be appreciated by other hackers."
+    },
+    {
+        "question": "What will the Covid-19 measures look like at the event?",
+        "answer": "We fill follow the recommendations of the Dutch government with regards to Covid-19. Currently there are no restrictions in place, but we will keep a close eye on any changes as the event approaches."
+    },
+    {
+        "question": "Do you provide any travel reimbursement?",
+        "answer": "Unfortunately, we do not provide any travel reimbursement. We hope to see you at the event regardless!"
+    },
+    {
+        "question": "My question is not in here!",
+        "answer": "Send us an email at `hackdelft@ch.tudelft.nl`, and we will be happy to help you out!"
+    }
+]

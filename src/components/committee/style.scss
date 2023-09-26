@@ -1,0 +1,77 @@
+@import "/src/variables";
+@import "/src/mixins";
+
+.container {
+    width: calc(100% - 16px);
+    display: flex;
+    flex-direction: column;
+    margin: 0 8px;
+}
+
+.image {
+    flex: 2;
+    align-self: center;
+
+    img {
+        width: 100%;
+        border: 4px solid $secondary-color;
+        border-radius: 12px;
+        box-sizing: border-box;
+        object-fit: cover;
+    }
+}
+
+.committee {
+    flex: 3;
+
+    h2 {
+        color: $primary-color;
+        margin-bottom: 0;
+    }
+
+    h3 {
+        color: $secondary-color;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        line-height: 1.4;
+    }
+
+    tr {
+        border-bottom: 1px dotted $secondary-color;
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+    th {
+        float: left;
+        display: contents;
+        color: mix($primary-color, $primary-text, 80%);
+    }
+
+    td {
+        white-space: nowrap;
+    }
+}
+
+@include breakpoint(lg) {
+    .container {
+        flex-direction: row;
+        width: 100%;
+        margin: 0;
+    }
+
+    .committee {
+        margin-left: 16px;
+
+        tr {
+            border-bottom: none;
+        }
+    }
+}

@@ -1,0 +1,60 @@
+@import "/src/mixins";
+@import "/src/variables";
+
+.about {
+    h2 {
+        color: $secondary-color;
+        margin: 0;
+        padding-left: 2px;
+    }
+
+    p {
+        margin: 8px;
+
+        a {
+            color: $primary-color;
+        }
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        a {
+            margin: 8px 16px;
+            padding: 0.6em 1.6em;
+            border-radius: 6px;
+            white-space: nowrap;
+            text-decoration: none;
+            cursor: pointer;
+
+            svg {
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.tickets {
+    color: $primary-text;
+    background-color: $primary-color;
+}
+
+.discord {
+    color: $primary-text;
+    background-color: $discord-color;
+}
+
+@include breakpoint(sm) {
+    .about {
+        div {
+            flex-direction: row;
+        }
+    }
+}

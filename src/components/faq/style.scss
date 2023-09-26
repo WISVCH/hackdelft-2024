@@ -1,0 +1,45 @@
+@import "/src/variables";
+@import "/src/mixins";
+
+.faq {
+    margin: 12px 0;
+    padding: 16px;
+    background: $primary-color;
+
+    h2 {
+        margin: 0;
+        padding: 8px;
+        color: $primary-text;
+    }
+
+    ul {
+        padding: 0;
+        list-style-type: none;
+    }
+
+    li {
+        border-left: 3px solid mix($primary-color, $primary-text, 75%);
+        padding-left: 16px;
+        margin: 0 0 16px 8px;
+    }
+
+    summary {
+        cursor: pointer;
+        font-size: 1.1em;
+        font-weight: 600;
+        color: mix($primary-color, $primary-text, 40%);
+    }
+
+    p {
+        margin: 8px 0;
+        font-size: 1.1em;
+        line-height: 20px;
+        color: $primary-text;
+    }
+}
+
+@include breakpoint(sm) {
+    .faq {
+        border-radius: 6px;
+    }
+}

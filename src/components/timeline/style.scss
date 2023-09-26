@@ -1,0 +1,70 @@
+@import "/src/mixins";
+@import "/src/variables";
+
+.timeline {
+    h2 {
+        color: $primary-color;
+        margin: 0;
+    }
+
+    p {
+        margin: 0;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+        color: $secondary-color;
+        margin: 4px 16px;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.timelineEntry {
+    margin: 0 8px;
+
+    time {
+        font-style: italic;
+
+        svg {
+            padding-right: 4px;
+        }
+    }
+
+    div {
+        margin-bottom: 8px;
+        padding: 8px 16px;
+        border: 2px solid $secondary-color;
+        border-radius: 4px;
+    }
+
+    h4 {
+        margin: 0;
+        color: $primary-color;
+
+        svg {
+            padding-right: 4px;
+        }
+    }
+}
+
+@include breakpoint(md) {
+    .container {
+        flex-direction: row;
+
+        div {
+            width: 92%;
+        }
+    }
+
+    .timelineEntry {
+        align-self: center;
+    }
+}
