@@ -18,53 +18,11 @@
     {
         "type": "primary",
         "title": "Primary",
-        "items": [
-            {
-                "logoKey": "cgi",
-                "url": "https://www.cgi.com/en",
-                "title": "CGI"
-            },
-            {
-                "logoKey": "ind",
-                "url": "https://ind.nl/over-ind/werken-bij-de-IND/Paginas/default.aspx",
-                "title": "Immigratie- en Naturalisatiedienst"
-            }
-        ]
+        "items": []
     },
     {
         "type": "secondary",
         "title": "Supporting",
-        "items": [
-            {
-                "logoKey": "ded",
-                "url": "https://www.dutchenergydrink.nl/",
-                "title": "Dutch Energy Drink"
-            },
-            {
-                "logoKey": "elastic",
-                "url": "https://www.elastic.co/",
-                "title": "Elastic"
-            },
-            {
-                "logoKey": "koro",
-                "url": "https://koro-handels-gmbh.jobs.personio.de/",
-                "title": "KoRo"
-            },
-            {
-                "logoKey": "bit",
-                "url": "https://wearebit.com/join-us/",
-                "title": "Bit"
-            },
-            {
-                "logoKey": "bwl",
-                "url": "https://www.biteswelove.nl/",
-                "title": "Bites We Love"
-            },
-            {
-                "logoKey": "kleine",
-                "url": "https://www.dekleineconsultant.nl/",
-                "title": "De Kleine Consultant"
-            }
-        ]
+        "items": []
     }
 ]
