@@ -23,7 +23,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v3
         with:
-          images: ghcr.io/wisvch/hackdelft-2022
+          images: ghcr.io/wisvch/hackdelft-2024
           tags: type=sha, prefix={{date 'YYYYMMDD'}}-
       - name: Build and push Docker image
         uses: docker/build-push-action@v2
