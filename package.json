@@ -1,0 +1,37 @@
+{
+    "name": "hackdelft-2024",
+    "version": "0.1.0",
+    "description": "HackDelft informational website for the 23/24 edition",
+    "repository": "git@github.com:WISVCH/hackdelft-2024.git",
+    "author": "Scott Jochems",
+    "browserslist": "> 0.5%, last 2 versions, not dead",
+    "license": "MIT",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "start": "parcel -p 8000 ./src/index.html",
+        "build": "yarn clear-cache && parcel build ./src/index.html --reporter parcel-reporter-prerender && yarn fix-prerender",
+        "serve": "yarn build && http-server ./dist -p 8000 -g -b",
+        "clear-cache": "rm -rf dist .parcel-cache parcel-bundle-reports",
+        "fix-prerender": "sed -i 's/http:\\/\\/localhost:8000\\//\\//g' dist/index.html",
+        "lighthouse": "lighthouse http://localhost:8000 --view"
+    },
+    "dependencies": {
+        "@fortawesome/free-brands-svg-icons": "^6.4.2",
+        "@fortawesome/free-solid-svg-icons": "^6.4.2",
+        "preact": "^10.18.1"
+    },
+    "devDependencies": {
+        "@parcel/packager-raw-url": "2.9.3",
+        "@parcel/transformer-sass": "^2.9.3",
+        "@parcel/transformer-webmanifest": "^2.9.3",
+        "http-server": "^14.1.1",
+        "lighthouse": "^11.1.0",
+        "parcel": "^2.9.3",
+        "parcel-reporter-prerender": "^2.0.0",
+        "sharp": "^0.31.1"
+    },
+    "@parcel/transformer-css": {
+        "cssModules": true
+    }
+}

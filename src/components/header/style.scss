@@ -1,0 +1,44 @@
+@import "./src/mixins";
+@import "./src/variables";
+
+.header {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+
+    img {
+        height: 4em;
+        margin: 0 auto;
+    }
+
+    span {
+        margin: 16px 2vw;
+
+        h2 {
+            margin: 0;
+            white-space: nowrap;
+            color: $primary-color;
+        }
+
+        h3 {
+            margin: 0;
+            white-space: nowrap;
+            color: $secondary-color;
+        }
+    }
+}
+
+@include breakpoint(sm) {
+    .header {
+        flex-direction: row;
+        margin-bottom: 24px;
+
+        img {
+            margin: 0;
+        }
+
+        span {
+            margin: 0 2vw;
+        }
+    }
+}

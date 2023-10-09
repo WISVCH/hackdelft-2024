@@ -1,0 +1,42 @@
+@import "./variables";
+@import "./mixins";
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    color: $primary-text;
+    background: $background-color;
+    font-family: Helvetica, sans-serif;
+    line-height: 1.5;
+    font-size: 1.1em;
+}
+
+@include breakpoint(sm) {
+    body {
+        width: 80%;
+        margin: 0 10%;
+    }
+}
+
+@include breakpoint(md) {
+    body {
+        width: 70%;
+        margin: 0 15%;
+    }
+}
+
+@include breakpoint(lg) {
+    body {
+        width: 60%;
+        margin: 0 20%;
+    }
+}

@@ -1,0 +1,68 @@
+@import "./src/variables";
+
+.photos {
+    margin-bottom: 8px;
+
+    h2 {
+        color: $secondary-color;
+        margin: 0;
+        padding-left: 2px;
+    }
+
+    p {
+        margin: 0 8px;
+    }
+}
+
+.gallery {
+    display: flex;
+    overflow-x: scroll;
+    gap: 12px;
+    scrollbar-width: auto;
+    scrollbar-color: $primary-color $background-color;
+
+    &::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: $background-color;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $primary-color;
+    }
+}
+
+.image {
+    cursor: pointer;
+
+    img {
+        height: 260px;
+        width: 400px;
+        object-fit: cover;
+        border-radius: 6px;
+    }
+}
+
+.fullimage {
+    position: fixed;
+    display: flex;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #181226bb;
+    backdrop-filter: blur(12px);
+
+    img {
+        width: auto;
+        height: auto;
+        max-height: 90vh;
+        max-width: 90vw;
+    }
+}
