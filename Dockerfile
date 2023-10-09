@@ -1,5 +1,5 @@
 # Start the builder container.
-FROM buildkite/puppeteer AS builder
+FROM satantime/puppeteer-node AS builder
 WORKDIR /src
 
 # Instal Dependencies.
