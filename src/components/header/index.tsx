@@ -11,7 +11,7 @@ export const Header: FunctionalComponent = () => (
     <header class={style.header}>
         <img src={icon} alt="HackDelft" />
         <span>
-            <h2>Date: April 30th &amp; May 1st</h2>
+            <h2>Date: May 25th &amp; May 26th</h2>
             <h3>Location: TU Delft X</h3>
         </span>
     </header>

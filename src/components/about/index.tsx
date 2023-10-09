@@ -13,23 +13,22 @@ export const About: FunctionalComponent = () => (
     <section class={style.about}>
         <h2>About</h2>
         <p>
-            Join us on April 30th and May 1st in this all-inclusive 24 hour
+            Join us on May 25th and May 26th in this all-inclusive 24 hour
             hackathon where you solve fun challenges provided by our partner
             companies, win prizes, and have a good time!
         </p>
         <p>
-            We are completely sold out, but you can still sign up for the
-            waiting list.
+            Tickets are not available yet but check back here soon!
         </p>
         <div>
-            <a
+            {/* <a
                 class={style.tickets}
                 href="https://forms.gle/VmVWSof6tLyaVyBB8"
                 target="_blank"
             >
                 <Icon icon={faTicket} pad />
                 Sign up for the waiting list!
-            </a>
+            </a> */}
             <a
                 class={style.discord}
                 href="https://discord.gg/rB2ucUaFnc"

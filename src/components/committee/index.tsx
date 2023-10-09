@@ -12,40 +12,40 @@ const picture = new URL(
  */
 export const Committee: FunctionalComponent = () => (
     <section class={style.container}>
-        <div class={style.image}>
+        {/* <div class={style.image}>
             <img src={picture as any} alt="HackDelft Committee" />
-        </div>
+        </div> */}
         <div class={style.committee}>
             <h2>Meet The Committee</h2>
-            <h3>From left to right</h3>
+            {/* <h3>From left to right</h3> */}
             <table>
                 <tr>
-                    <th>The Head of Acquisition</th>
-                    <td>Berend Krouwels</td>
-                </tr>
-                <tr>
-                    <th>The Head of Logistics</th>
-                    <td>Annerieke Ohm</td>
+                    <th>The Chair</th>
+                    <td>Marit Radder</td>
                 </tr>
                 <tr>
                     <th>The Secretary</th>
-                    <td>Nina Immig</td>
-                </tr>
-                <tr>
-                    <th>The Chairman</th>
-                    <td>Dany Sluijk</td>
+                    <td>Marjolein van den Berghe</td>
                 </tr>
                 <tr>
                     <th>The Treasurer</th>
-                    <td>Niels van den Dool</td>
+                    <td>Merle de Jong</td>
+                </tr>
+                <tr>
+                    <th>The Head of Logistics</th>
+                    <td>Marijn van der Tuin</td>
                 </tr>
                 <tr>
                     <th>The Commissioner of Promotional Affairs</th>
-                    <td>Ricardo Vogel</td>
+                    <td>Simon Deuten</td>
                 </tr>
                 <tr>
+                    <th>The Head of Acquisition</th>
+                    <td>Scott Jochems</td>
+                </tr>            
+                <tr>
                     <th>The Qualitate Qua</th>
-                    <td>Cas Wever</td>
+                    <td>Robert van Dijk</td>
                 </tr>
             </table>
         </div>

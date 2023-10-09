@@ -6,21 +6,4 @@ export const sponsorLogoMap: { [key: string]: URL } = {
         "/static/sponsors/xtudelft.png?as=webp&width=200",
         import.meta.url
     ),
-    cgi: new URL("/static/sponsors/cgi.png?as=webp&width=200", import.meta.url),
-    elastic: new URL(
-        "/static/sponsors/elastic.png?as=webp&width=200",
-        import.meta.url
-    ),
-    ded: new URL("/static/sponsors/ded.png?as=webp&width=200", import.meta.url),
-    koro: new URL(
-        "/static/sponsors/koro.png?as=webp&width=200",
-        import.meta.url
-    ),
-    bit: new URL("/static/sponsors/bit.png?as=webp&width=200", import.meta.url),
-    bwl: new URL("/static/sponsors/bwl.png?as=webp&width=200", import.meta.url),
-    ind: new URL("/static/sponsors/ind.png?as=webp&width=200", import.meta.url),
-    kleine: new URL(
-        "/static/sponsors/kleine.png?as=webp&width=200",
-        import.meta.url
-    ),
 };
