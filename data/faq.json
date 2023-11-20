@@ -5,7 +5,7 @@
     },
     {
         "question": "How can I sign up for HackDelft?",
-        "answer": "Unfortunately we are completely sold out! Use the button on top of the page to sign up for the waiting list."
+        "answer": "Ticket sales are not open yet so check back here soon!"
     },
     {
         "question": "What languages can I use during the event?",
@@ -29,15 +29,11 @@
     },
     {
         "question": "How much will it cost to attend HackDelft?",
-        "answer": "The price has been set at 1,- for the entire weekend. In return you can hack away all weekend, get three meals, and much more!"
+        "answer": "The price has not been determined yet so check back here soon!"
     },
     {
         "question": "What do I need to bring to the event?",
         "answer": "You will have to bring your laptop, some chargers, and an air mattress with sleeping bag if you intent to sleep. Some hygiene items will also be appreciated by other hackers."
-    },
-    {
-        "question": "What will the Covid-19 measures look like at the event?",
-        "answer": "We fill follow the recommendations of the Dutch government with regards to Covid-19. Currently there are no restrictions in place, but we will keep a close eye on any changes as the event approaches."
     },
     {
         "question": "Do you provide any travel reimbursement?",
