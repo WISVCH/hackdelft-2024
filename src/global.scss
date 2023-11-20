@@ -14,7 +14,8 @@ body {
     display: flex;
     flex-direction: column;
     color: $primary-text;
-    background: $background-color;
+    background-image: url(../static/Background.png);
+    background-repeat: repeat-y repeat-x;
     font-family: Helvetica, sans-serif;
     line-height: 1.5;
     font-size: 1.1em;
