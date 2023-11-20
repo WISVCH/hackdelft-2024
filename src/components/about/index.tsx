@@ -11,7 +11,7 @@ import * as style from "./style.scss";
  */
 export const About: FunctionalComponent = () => (
     <section class={style.about}>
-        <h2>About</h2>
+        <h2>About us</h2>
         <p>
             Join us on May 25th and May 26th in this all-inclusive 24 hour
             hackathon where you solve fun challenges provided by our partner

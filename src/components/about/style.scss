@@ -2,8 +2,16 @@
 @import "./src/variables";
 
 .about {
+    margin-bottom: 32px;
+
     h2 {
-        color: $secondary-color;
+        color: $primary-color;
+        font-family: "Krona-One";
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
         margin: 0;
         padding-left: 2px;
     }

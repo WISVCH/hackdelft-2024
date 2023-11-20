@@ -22,7 +22,7 @@
         "preact": "^10.18.1"
     },
     "devDependencies": {
-        "@parcel/packager-raw-url": "2.9.3",
+        "@parcel/packager-raw-url": "^2.9.3",
         "@parcel/transformer-sass": "^2.9.3",
         "@parcel/transformer-webmanifest": "^2.9.3",
         "http-server": "^14.1.1",

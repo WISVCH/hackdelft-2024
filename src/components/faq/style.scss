@@ -5,11 +5,19 @@
     margin: 12px 0;
     padding: 16px;
     background: $primary-color;
+    margin-bottom: 32px;
+
 
     h2 {
+        color: $secondary-color;
+        font-family: "Krona-One";
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
         margin: 0;
-        padding: 8px;
-        color: $primary-text;
+        padding-left: 2px;
     }
 
     ul {
