@@ -32,17 +32,17 @@ export const Committee: FunctionalComponent = () => (
                     <td>Merle de Jong</td>
                 </tr>
                 <tr>
-                    <th>The Head of Logistics</th>
-                    <td>Marijn van der Tuin</td>
-                </tr>
-                <tr>
-                    <th>The Commissioner of Promotional Affairs</th>
+                    <th>The Commissioner of Promotion</th>
                     <td>Simon Deuten</td>
                 </tr>
                 <tr>
-                    <th>The Head of Acquisition</th>
+                    <th>The Commissioner of Acquisition</th>
                     <td>Scott Jochems</td>
-                </tr>            
+                </tr>
+                <tr>
+                    <th>The Commissioner of Logistics</th>
+                    <td>Marijn van der Tuin</td>
+                </tr>       
                 <tr>
                     <th>The Qualitate Qua</th>
                     <td>Robert van Dijk</td>
