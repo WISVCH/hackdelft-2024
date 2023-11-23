@@ -30,7 +30,7 @@
 
     .columns {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         width: 100%;
     }
     
@@ -40,6 +40,7 @@
         flex-direction: column;
         text-align: left;
         padding: 20px;
+        justify-content: flex-start;
     }
     
 
