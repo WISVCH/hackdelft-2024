@@ -21,7 +21,7 @@ export const Footer: FunctionalComponent = () => (
         </a>
         <a
             title="View source code."
-            href="https://github.com/WISVCH/hackdelft-2022"
+            href="https://github.com/WISVCH/hackdelft-2024"
             target="_BLANK"
         >
             <Icon icon={faGithub} pad />
