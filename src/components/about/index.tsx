@@ -16,17 +16,17 @@ export const About: FunctionalComponent = () => (
             <div class={style.column}>
                 <h3>What?</h3>
                 <p>
-                    Hack to the future is an all-inclusive 24 hour hackathon where you solve fun challenges provided by our partner companies, win prizes, and have a good time!
+                    Embark on an exciting journey with Hack to the Future, a fully inclusive 24-hour hackathon experience. Immerse yourself in a dynamic environment where participants take on entertaining challenges presented by our amazing partner companies. Beyond the thrill of problem-solving, the event offers the chance to win exciting prizes and guarantees a good time for all involved. 
                 </p>
                 <h3>Who?</h3>
                 <p>
-                    Any current university student can join the Hackathon and your team can consist of 1 to 4 students. The hackathon is beginner friendly and no prior knowledge is needed to attend but even for more experienced people there will surely be a challenge waiting.
+                    Any current university student is welcome! Whether you're a beginner or an experienced individual, the hackathon welcomes all levels of expertise. Partner companies provide challenges for participants to solve, fostering a collaborative environment where students can showcase their skills and creativity.
                 </p>
             </div>
             <div class={style.column}>
                 <h3>When?</h3>
                 <p>
-                    Join us on May 25th and May 26th at TU Delft X. The entire event will run from saturday morning till sunday evening. Dinner is included and sleeping over on location is also possible. During these two days you will get 24 hours to solve a case.
+                    Mark your calendars for May 25th and May 26th as we invite you to join us at TU Delft X for an exhilarating two-day event. The excitement kicks off on Saturday morning, extending all the way through Sunday evening. To enhance your experience, we've got dinner covered, and sleeping over at the venue is an option. Across these two days, participants will have a dedicated 24 hours to collaboratively tackle and solve a challenging case.
                 </p>
             </div>
         </div>
