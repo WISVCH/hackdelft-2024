@@ -5,7 +5,7 @@
     margin-bottom: 32px;
 
     h2 {
-        color: $primary-color;
+        color: $secondary-color;
         font-family: "Krona-One";
         font-size: 48px;
         font-style: normal;
@@ -13,27 +13,91 @@
         line-height: normal;
         text-align: center;
         margin: 0;
-        padding-left: 2px;
     }
 
     p {
         margin: 0;
+        text-align: center;
     }
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    > div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(10, 150px);
+    }
 
     h3 {
         color: $secondary-color;
         margin: 4px 16px;
+        grid-column-start: 1;
+        grid-column-end: 3;
     }
 
-    div {
-        display: flex;
-        flex-direction: column;
+    .saturday {
+        border-right: 2px solid $primary-color;
+        padding-right: 100px;
+        div:nth-child(2) {
+            grid-column-start: 1;
+        }
+        div:nth-child(3) {
+            grid-column-start: 1;
+        }
+        div:nth-child(4) {
+            grid-column-start: 2;
+            grid-row-start: 4;
+            grid-row-end: 10;
+            height: 100%;
+
+            div {
+                height: 100%;
+            }
+        }
+        div:nth-child(5) {
+            grid-column-start: 1;
+            grid-row-start: 8;
+        }
     }
+
+    .sunday {
+        padding-left: 100px;
+
+        div:nth-child(2) {
+            grid-column-start: 2;
+            grid-row-start: 2;
+            grid-row-end: 5;
+            height: 85%;
+        }
+        div:nth-child(3) {
+            grid-column-start: 1;
+            grid-row-start: 3;
+            margin-bottom: auto;
+        }
+        div:nth-child(4) {
+            grid-column-start: 1;
+            grid-row-start: 4;
+            height: 100%;
+        }
+
+        div:nth-child(5) {
+            grid-column-start: 2;
+            grid-row-start: 5;
+            grid-row-end: 7;
+            height: 100%;
+        }
+
+        div:nth-child(6) {
+            grid-column-start: 1;
+            grid-row-start: 7 ;
+        }
+    }
+
+
+
 }
 
 .timelineEntry {
@@ -48,15 +112,18 @@
     }
 
     div {
-        margin-bottom: 8px;
-        padding: 8px 16px;
-        border: 2px solid $secondary-color;
-        border-radius: 4px;
+        padding: 10px;
+        border: 2px solid $primary-color;
+        font-family: "Krona-One";
+        font-size: 14px;
+
     }
 
     h4 {
         margin: 0;
+        margin-bottom: 8px;
         color: $primary-color;
+        font-size: 16px;
 
         svg {
             padding-right: 4px;

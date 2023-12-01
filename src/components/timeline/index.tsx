@@ -18,14 +18,13 @@ export const Timeline: FunctionalComponent = () => (
             indication, and therefore subject to change.
         </p>
         <div class={style.container}>
-            <div>
-                <h3>Saturday</h3>
+        <h3>Saturday</h3>
+            <div class={style.saturday}>
                 {(saturday as TimelineEntry[]).map((entry) =>
                     renderEntry(entry)
                 )}
             </div>
-            <div>
-                <h3>Sunday</h3>
+            <div class={style.sunday}>
                 {(sunday as TimelineEntry[]).map((entry) => renderEntry(entry))}
             </div>
         </div>
@@ -33,7 +32,7 @@ export const Timeline: FunctionalComponent = () => (
 );
 
 const renderEntry = (entry: TimelineEntry) => (
-    <div class={style.timelineEntry}>
+    <div class={style.timelineEntry} id={"box-"+ entry.id}>
         <time>
             <Icon icon={faClock} height="12px" />
             {entry.time}
@@ -53,4 +52,5 @@ interface TimelineEntry {
     time: string;
     name: string;
     description: string;
+    id: string;
 }

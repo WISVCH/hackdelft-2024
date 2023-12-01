@@ -19,28 +19,33 @@ body {
     font-family: Helvetica, sans-serif;
     line-height: 1.5;
     font-size: 1.1em;
+    position: relative;
 }
 
-@include breakpoint(sm) {
-    body {
-        width: 80%;
-        margin: 0 10%;
-    }
+section {
+    margin: 0 80px;
 }
 
-@include breakpoint(md) {
-    body {
-        width: 70%;
-        margin: 0 15%;
-    }
-}
+// @include breakpoint(sm) {
+//     body {
+//         width: 80%;
+//         margin: 0 10%;
+//     }
+// }
 
-@include breakpoint(lg) {
-    body {
-        width: 60%;
-        margin: 0 20%;
-    }
-}
+// @include breakpoint(md) {
+//     body {
+//         width: 70%;
+//         margin: 0 15%;
+//     }
+// }
+
+// @include breakpoint(lg) {
+//     body {
+//         width: 60%;
+//         margin: 0 20%;
+//     }
+// }
 
 @font-face {
     font-family: "Krona-One";

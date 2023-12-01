@@ -9,10 +9,17 @@ import icon from "url:/static/HogeResolutieLogo.png?as=webp&width=500";
  */
 export const Header: FunctionalComponent = () => (
     <header class={style.header}>
-        <img src={icon} alt="HackDelft" />
-        <span>
-            <h2>Date: May 25th &amp; May 26th</h2>
-            <h3>Location: TU Delft X</h3>
-        </span>
+        <div class={style.container}>
+            <img src={icon} alt="HackDelft" />
+            <div class={style.text}>
+                <p>25 and 26 may 2024</p>
+                <p>X TU Delft</p>
+            </div>
+            <div class={style.buttons}>
+                <button>Tickets</button>
+                <button class={style.secondary}>Join Discord</button>
+            </div>
+        </div>
+        
     </header>
 );
