@@ -1,8 +1,12 @@
 import { h, FunctionalComponent } from "preact";
+import { faCalendarDay, faLocationDot } from "@fortawesome/free-solid-svg-icons";
+
 
 import * as style from "./style.scss";
 
 import icon from "url:/static/HogeResolutieLogo.png?as=webp&width=500";
+import { Icon } from "/src/components/icon";
+
 
 /**
  * Renders the header of the site.
@@ -12,12 +16,15 @@ export const Header: FunctionalComponent = () => (
         <div class={style.container}>
             <img src={icon} alt="HackDelft" />
             <div class={style.text}>
-                <p>25 and 26 may 2024</p>
-                <p>X TU Delft</p>
+                
+                <p> <Icon icon={faCalendarDay}/> 25 and 26 may 2024</p>
+                <p> <Icon icon={faLocationDot}/> X TU Delft</p>
             </div>
             <div class={style.buttons}>
-                <button>Tickets</button>
-                <button class={style.secondary}>Join Discord</button>
+                {/* TODO: uncomment when tickets are online */}
+                {/* <button>Tickets</button> */}
+                {/* <button class={style.secondary}>Join Discord</button> */}
+                <button href="https://discord.gg/rB2ucUaFnc" target="_blank">Join Discord</button>
             </div>
         </div>
         

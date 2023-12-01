@@ -42,6 +42,11 @@
         font-size: 18px;
         padding: 10px 15px;
         width: 200px;
+
+        &:hover {
+            background-color: $primary-color-darker;
+            cursor: pointer;
+        }
     }
 
     button.secondary {
