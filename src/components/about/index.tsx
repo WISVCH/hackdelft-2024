@@ -20,7 +20,7 @@ export const About: FunctionalComponent = () => (
                 </p>
                 <h3>Who?</h3>
                 <p>
-                    Any current university student is welcome! Whether you're a beginner or an experienced individual, the hackathon welcomes all levels of expertise. Partner companies provide challenges for participants to solve, fostering a collaborative environment where students can showcase their skills and creativity.
+                    Any current university student is welcome! Whether you're a beginner or an experienced individual, the hackathon welcomes all levels of expertise. Partner companies provide challenges for participants to solve. They foster a collaborative environment where students can showcase their skills and creativity.
                 </p>
             </div>
             <div class={style.column}>
