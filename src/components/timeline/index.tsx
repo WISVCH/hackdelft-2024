@@ -18,7 +18,11 @@ export const Timeline: FunctionalComponent = () => (
             indication, and therefore subject to change.
         </p>
         <div class={style.container}>
-        <h3>Saturday</h3>
+            <h3>Saturday</h3>
+            <h3>Sunday</h3>
+        </div>
+
+        <div class={style.container}>
             <div class={style.saturday}>
                 {(saturday as TimelineEntry[]).map((entry) =>
                     renderEntry(entry)

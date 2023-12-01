@@ -23,7 +23,13 @@ body {
 }
 
 section {
-    margin: 0 80px;
+    margin: 0 8px;
+}
+
+@include breakpoint(sm) {
+    section {
+        margin: 0 80px;
+    }
 }
 
 // @include breakpoint(sm) {
