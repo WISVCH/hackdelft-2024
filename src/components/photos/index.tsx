@@ -53,14 +53,13 @@ export const Photos: FunctionalComponent = () => {
     return (
         <section class={style.photos}>
             <h2>Photos</h2>
-            <p>
-                Take a look at a previous edition to get an impression of the event.
-            </p>
             <div
                 ref={gallery}
                 class={style.gallery}
                 onClick={() => (shouldAnimate.current = false)}
             >
+                <div class={style.block}></div>
+                
                 {photosMap.map((url) => (
                     <Photo url={url} />
                 ))}
