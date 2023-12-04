@@ -58,11 +58,13 @@ export const Photos: FunctionalComponent = () => {
                 class={style.gallery}
                 onClick={() => (shouldAnimate.current = false)}
             >
-                <div class={style.block}></div>
-                
+                <div class={style.blockleft}></div>
+
                 {photosMap.map((url) => (
                     <Photo url={url} />
                 ))}
+
+                <div class={style.blockright}></div>
             </div>
         </section>
     );

@@ -20,7 +20,7 @@
     }
 }
 
-.block {
+.blockleft {
     position: absolute; 
     margin-top: -120px;
     margin-left: 120px;
@@ -30,6 +30,18 @@
     background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.00) 50%);
     z-index: 2; 
     transform: rotate(-90deg);
+  }
+
+.blockright {
+    position: absolute; 
+    margin-top: -120px;
+    margin-left: 775px;
+    display: block;
+    width: 260px; 
+    height: 500px; 
+    background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.00) 50%);
+    z-index: 2; 
+    transform: rotate(90deg);
   }
 
 
