@@ -12,22 +12,24 @@ import * as style from "./style.scss";
  */
 export const Timeline: FunctionalComponent = () => (
     <section class={style.timeline}>
-        <h2>Schedule</h2>
+        <h2>Timetable</h2>
         <p>
             This is an indication of the schedule of the event! It is an
             indication, and therefore subject to change.
         </p>
-        <div class={style.container}>
+        <div class={style.days}>
             <h3>Saturday</h3>
             <h3>Sunday</h3>
         </div>
 
         <div class={style.container}>
+            <h3 class={style.mobiledays}>Saturday</h3>
             <div class={style.saturday}>
                 {(saturday as TimelineEntry[]).map((entry) =>
                     renderEntry(entry)
                 )}
             </div>
+            <h3 class={style.mobiledays}>Sunday</h3>
             <div class={style.sunday}>
                 {(sunday as TimelineEntry[]).map((entry) => renderEntry(entry))}
             </div>

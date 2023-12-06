@@ -19,6 +19,10 @@
         margin: 0;
         text-align: center;
     }
+
+    .days {
+        display: none;
+    }
 }
 
 .timeline .container {
@@ -36,6 +40,12 @@
         margin: 4px 16px;
         grid-column-start: 1;
         grid-column-end: 3;
+    }
+
+    .mobiledays {
+        color: $primary-text;
+        font-family: "Krona-One";
+        margin: 16px 8px;
     }
 
     .saturday {       
@@ -132,6 +142,10 @@
 @include breakpoint(xl) {
     .timeline .container {
         flex-direction: row;
+
+        .mobiledays {
+            display: none;
+        }
     }
 
     .saturday {
@@ -141,6 +155,25 @@
 
     .sunday {
         padding-left: 75px;
+    }
+
+    .timeline .days {
+        display: flex;
+        flex-direction: row;
+
+        h3 {
+            width: 50%;
+            min-width: calc(50% - 16px);
+            max-width: 50%;
+            font-weight: 400;
+            font-size: 20px;
+            font-family: "Krona-One";
+            margin: 24px 8px;
+
+            &:nth-child(2) {
+                margin-left: 82px;
+            }
+        }
     }
 }
 
