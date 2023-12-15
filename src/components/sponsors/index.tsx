@@ -27,16 +27,21 @@ export const sponsorItem = (category: SponsorCategory) => {
     return (
         <Fragment>
             <h3>{category.title}</h3>
-            <p>More too be announced!</p>
             <ul class={style.sponsorlist}>
                 {sponsors.map((sponsor: Sponsor) => (
                     <li key={sponsor.logoKey} data-type={category.type}>
+                        
                         <a
                             href={sponsor.url}
                             target="_blank"
                             rel="noopener"
                             title={sponsor.title}
                         >
+
+                            <div class={style.topbar}>
+                                <hr/>
+                            </div>
+                            
                             <div class={style.img}>
                                 <img
                                     src={sponsorLogoMap[
@@ -44,9 +49,15 @@ export const sponsorItem = (category: SponsorCategory) => {
                                     ].toString()}
                                     alt={sponsor.title}
                                 />
+                            
+                            </div>                        
+                            <p>{sponsor.title}</p>           
+
+                            <div class={style.bottombar}>
+                                <hr/>
                             </div>
-                            <p>{sponsor.title}</p>
-                        </a>
+
+                        </a>                 
                     </li>
                 ))}
             </ul>

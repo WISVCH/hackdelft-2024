@@ -1,14 +1,14 @@
 @import "./src/mixins";
 @import "./src/variables";
 
-.about {
-    margin-bottom: 32px; 
+.numbers {
+    margin-bottom: 64px; 
 
 
     h2 {
-        color: $primary-color;
-        font-family: "Krona-One";
-        font-size: 48px;
+        color: $secondary-color;
+        font-family: "Audiowide";
+        font-size: 96px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -44,21 +44,6 @@
     }
     
 
-    p {
-        margin: 8px;
-        margin-bottom: 50px;
-
-        font-family: "Krona-One";
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-
-        a {
-            color: $primary-color;
-        }
-    }
-
     div {
         display: flex;
         flex-direction: column;
@@ -84,18 +69,8 @@
     }
 }
 
-.tickets {
-    color: $primary-text;
-    background-color: $primary-color;
-}
-
-.discord {
-    color: $primary-text;
-    background-color: $discord-color;
-}
-
 @include breakpoint(sm) {
-    .about {
+    .numbers {
         div {
             flex-direction: row;
         }
