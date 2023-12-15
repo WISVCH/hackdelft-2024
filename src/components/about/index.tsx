@@ -39,14 +39,14 @@ export const About: FunctionalComponent = () => (
                 <Icon icon={faTicket} pad />
                 Sign up for the waiting list!
             </a> */}
-            <a
+            {/* <a
                 class={style.discord}
                 href="https://discord.gg/rB2ucUaFnc"
                 target="_blank"
             >
                 <Icon icon={faDiscord} pad />
                 Join Our Discord!
-            </a>
+            </a> */}
         </div>
     </section>
 );
