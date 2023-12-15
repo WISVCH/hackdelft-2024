@@ -10,7 +10,7 @@ import * as style from "./style.scss";
  * Renders the about section.
  */
 export const About: FunctionalComponent = () => (
-    <section class={style.about}>
+    <section class={style.about} id="aboutus">
         <h2>About us</h2>
         <div class={style.columns}>
             <div class={style.column}>

@@ -1,21 +1,25 @@
 {
     "saturday": [
         {
-            "time": "12:00",
+            "id": "sa1",
+            "time": "12:00 - 13:00",
             "name": "Walk-in",
-            "description": "We will welcome you in hall X1 of TU Delft X! You then have a bit of time to get settled in before the hacking starts."
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
         },
         {
-            "time": "13:00",
-            "name": "Opening Presentation",
-            "description": "Here you will finally be introduced to the challenges, and get other important information about the event. If you don't have a team yet, you can form it here."
+            "id": "sa2",
+            "time": "13:00 - 14:00",
+            "name": "Opening",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
         },
         {
-            "time": "14:00",
-            "name": "Start Hacking!",
-            "description": "After the challenges have been divided you can now get started on your project. We are excited to see what you will come up with!"
+            "id": "sa3",
+            "time": "14:00 - 00:00",
+            "name": "Hacking!",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
         },
         {
+            "id": "sa4",
             "time": "18:30 - 20:00",
             "name": "Dinner",
             "description": ""
@@ -23,29 +27,34 @@
     ],
     "sunday": [
         {
+            "id": "su1",
+            "time": "00:00 - 14:00",
+            "name": "Hacking!",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+        },
+        {
+            "id": "su2",
             "time": "8:00 - 10:00",
             "name": "Breakfast",
             "description": ""
         },
         {
+            "id": "su3",
             "time": "12:30 - 14:30",
             "name": "Lunch",
             "description": ""
         },
         {
-            "time": "14:00",
-            "name": "Hacking Ends",
-            "description": "It has been 24 hours since we started! Now it's time to pitch your project to the jury."
-        },
-        {
-            "time": "14:30",
+            "id": "su4",
+            "time": "14:30 - 16:00",
             "name": "Networking Drinks",
-            "description": "Talk to your fellow hackers at the drinks after the hacking has ended."
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
         },
         {
-            "time": "± 16:00",
+            "id": "su5",
+            "time": "16:00 - 17:00",
             "name": "Award Ceremony",
-            "description": "We have a lot of prizes to award here, maybe to you?"
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
         }
     ]
 }
