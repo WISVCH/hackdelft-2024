@@ -10,7 +10,7 @@ import * as style from "./style.scss";
  * Renders the about section.
  */
 export const About: FunctionalComponent = () => (
-    <section class={style.about}>
+    <section class={style.about} id="aboutus">
         <h2>About us</h2>
         <p>
             Join us on May 25th and May 26th in this all-inclusive 24 hour

@@ -1,4 +1,6 @@
 import { h, FunctionalComponent } from "preact";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { Icon } from "/src/components/icon";
 
 import faqData from "/data/faq.json";
 
@@ -10,14 +12,12 @@ import * as style from "./style.scss";
  */
 export const FAQ: FunctionalComponent = () => (
     <section class={style.faq}>
-        <h2>Frequently Asked Questions</h2>
+        <h2>FAQ</h2>
         <ul>
             {faqData.map((q: Question, i: number) => (
                 <li key={i}>
-                    <details
-                        open={window.matchMedia("(min-width: 768px)").matches}
-                    >
-                        <summary>{q.question}</summary>
+                    <details>
+                        <summary>{q.question}<span class={style.icon}><Icon icon={faChevronDown}/></span></summary>
                         <p>{q.answer}</p>
                     </details>
                 </li>

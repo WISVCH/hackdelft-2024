@@ -1,0 +1,23 @@
+@import "./src/mixins";
+@import "./src/variables";
+
+.navigation {
+    border: 5px solid $primary-color;
+
+    div {
+        display: flex;
+        gap: 16px;
+        font-size: 20px;
+        margin: 4px 8px;
+
+        .time {
+            margin-left: auto;
+            margin-right: 0;;
+        }
+        .icon {
+            color: $secondary-color;
+            margin: 0 8px;
+            vertical-align: middle;
+        }
+    } 
+}

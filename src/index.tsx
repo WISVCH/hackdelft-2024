@@ -6,6 +6,7 @@ import {
     FAQ,
     Footer,
     Header,
+    Navigation,
     Photos,
     Sponsors,
     Timeline,
@@ -20,6 +21,7 @@ const start = (): void => {
     render(
         <Fragment>
             <Header />
+            <Navigation />
             <About />
             <Photos />
             <Timeline />

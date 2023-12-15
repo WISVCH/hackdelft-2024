@@ -7,3 +7,4 @@ export { Icon } from "./icon";
 export { Photos } from "./photos";
 export { Sponsors } from "./sponsors";
 export { Timeline } from "./timeline";
+export { Navigation} from "./navigation";

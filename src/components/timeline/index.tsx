@@ -11,7 +11,7 @@ import * as style from "./style.scss";
  * Renders the timeline section.
  */
 export const Timeline: FunctionalComponent = () => (
-    <section class={style.timeline}>
+    <section class={style.timeline} id='timetable'>
         <h2>Timetable</h2>
         <p>
             This is an indication of the schedule of the event! It is an
