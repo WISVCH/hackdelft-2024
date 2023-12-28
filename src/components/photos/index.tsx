@@ -9,6 +9,9 @@ import * as style from "./style.scss";
  * Renders the photos section.
  */
 export const Photos: FunctionalComponent = () => {
+    const [currentIndex, setCurrentIndex] = useState<number>(0); // Initialize with the first photo
+
+    const galleryContainer = useRef<HTMLDivElement | null>(null);
     const gallery = useRef<HTMLDivElement | null>(null);
     const requestRef = useRef<number>(null);
     const shouldAnimate = useRef<boolean>(true);
@@ -43,9 +46,8 @@ export const Photos: FunctionalComponent = () => {
             shouldAnimate.current = false;
         };
 
-        () => {
+        return () => {
             if (requestRef.current === null) return;
-
             cancelAnimationFrame(requestRef.current);
         };
     }, []);
@@ -53,43 +55,112 @@ export const Photos: FunctionalComponent = () => {
     return (
         <section class={style.photos}>
             <h2>Photos</h2>
-            <div
-                ref={gallery}
-                class={style.gallery}
-                onClick={() => (shouldAnimate.current = false)}
-            >
-                <div class={style.blockleft}></div>
-
-                {photosMap.map((url) => (
-                    <Photo url={url} />
-                ))}
-
-                <div class={style.blockright}></div>
+            <div ref={galleryContainer} class={style.galleryContainer}>
+                <div
+                    ref={gallery}
+                    class={style.gallery}
+                    onClick={() => {
+                        shouldAnimate.current = false;
+                    }}
+                >
+                    {photosMap.map((url, index) => (
+                        <Photo
+                            key={index}
+                            url={url}
+                            setAnimate={() => {
+                                shouldAnimate.current = true;
+                            }}
+                            setNavigate={(index) => setCurrentIndex(index)}
+                            currentIndex={index}
+                            totalPhotos={photosMap.length}
+                            activeIndex={currentIndex}
+                            startup={shouldAnimate.current}
+                        />
+                    ))}
+                </div>
             </div>
         </section>
     );
 };
 
 const Photo: FunctionalComponent<PhotoProps> = (props) => {
-    const [opened, setOpened] = useState<boolean>(false);
+    const [opened, setOpened] = useState<boolean>(props.currentIndex === props.activeIndex);
+    const [currentIndex, setCurrentIndex] = useState<number>(props.currentIndex);
+
+    useEffect(() => {
+        if(props.startup){
+            setOpened(false);
+        } else {
+            setCurrentIndex(props.currentIndex);
+            setOpened(props.currentIndex === props.activeIndex);
+        }
+    }, [props.currentIndex, props.activeIndex]);
 
     const onClick = () => {
         setOpened(!opened);
+        props.setAnimate();
+    };
+
+    const navigate = (delta: number) => {
+        const nextIndex = (currentIndex + delta + props.totalPhotos) % props.totalPhotos;
+        setCurrentIndex(nextIndex);
+        props.setNavigate(nextIndex); 
     };
 
     const classes = `${style.image} ${opened ? style.fullimage : ""}`;
 
     return (
         <span class={classes} onClick={onClick}>
-            <img
-                src={props.url.toString()}
-                alt="HackDelft 2019 photo"
-                loading="lazy"
-            />
+            {opened && (
+                <div class={style.fullimage}>
+                    <div class={style.navigation}>
+                        <div
+                            class={`${style.arrow} ${style.leftArrow}`}
+                            onClick={(e) => {
+                                e.stopPropagation(); 
+                                navigate(-1);
+                            }}
+                        >
+                            &lt;
+                        </div>
+                        <div
+                            class={`${style.arrow} ${style.rightArrow}`}
+                            onClick={(e) => {
+                                e.stopPropagation(); // Stop event propagation
+                                navigate(1);
+                            }}
+                        >
+                            &gt;
+                        </div>
+                    </div>
+                    <img
+                        src={props.url.toString()}
+                        alt="HackDelft 2021 photo"
+                        loading="lazy"
+                    />
+                </div>
+            )}
+            {!opened && (
+                <img
+                    src={props.url.toString()}
+                    alt="HackDelft 2021 photo"
+                    loading="lazy"
+                />
+            )}
         </span>
     );
 };
 
+
+
+
 interface PhotoProps {
     url: URL;
+    setAnimate: () => void;
+    setNavigate: (index: number) => void;
+    currentIndex: number;
+    totalPhotos: number;
+    activeIndex: number;
+    startup: boolean;
 }
+

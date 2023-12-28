@@ -1,5 +1,7 @@
 import { h, FunctionalComponent } from "preact";
 import { faCalendarDay, faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { faDiscord } from "@fortawesome/free-brands-svg-icons";
+
 
 
 import * as style from "./style.scss";
@@ -24,7 +26,10 @@ export const Header: FunctionalComponent = () => (
                 {/* TODO: uncomment when tickets are online */}
                 {/* <button>Tickets</button> */}
                 {/* <button class={style.secondary}>Join Discord</button> */}
-                <button href="https://discord.gg/rB2ucUaFnc" target="_blank">Join Discord</button>
+                <button href="https://discord.gg/rB2ucUaFnc" target="_blank">
+                    <Icon icon={faDiscord} pad />
+                    Join Discord
+                </button>
             </div>
         </div>
         

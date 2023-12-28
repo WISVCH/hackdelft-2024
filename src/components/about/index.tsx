@@ -1,6 +1,4 @@
 import { h, FunctionalComponent } from "preact";
-import { faTicket } from "@fortawesome/free-solid-svg-icons";
-import { faDiscord } from "@fortawesome/free-brands-svg-icons";
 
 import { Icon } from "/src/components";
 
@@ -29,24 +27,6 @@ export const About: FunctionalComponent = () => (
                     Mark your calendars for May 25th and May 26th as we invite you to join us at TU Delft X for an exhilarating two-day event. The excitement kicks off on Saturday morning, extending all the way through Sunday evening. To enhance your experience, we've got dinner covered, and sleeping over at the venue is an option. Across these two days, participants will have a dedicated 24 hours to collaboratively tackle and solve a challenging case.
                 </p>
             </div>
-        </div>
-        <div>
-        {/* <a
-                class={style.tickets}
-                href="https://forms.gle/VmVWSof6tLyaVyBB8"
-                target="_blank"
-            >
-                <Icon icon={faTicket} pad />
-                Sign up for the waiting list!
-            </a> */}
-            <a
-                class={style.discord}
-                href="https://discord.gg/rB2ucUaFnc"
-                target="_blank"
-            >
-                <Icon icon={faDiscord} pad />
-                Join Our Discord!
-            </a>
         </div>
     </section>
 );
