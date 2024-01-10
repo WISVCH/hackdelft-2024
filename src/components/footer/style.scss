@@ -2,15 +2,26 @@
 
 .footer {
     display: flex;
-    padding-bottom: 8px;
-    width: 100%;
-    justify-content: end;
+    justify-content: center;
 
-    * {
-        color: $secondary-color;
+    p {
+        color: $primary-color;
+        font-family: "Krona-One";
+        font-size: 34px;
+        margin: 10px 0;
+    }
 
-        &:hover {
-            color: $primary-color;
-        }
+    a {
+        font-family: "Krona-One";
+        font-size: 34px;
+        text-decoration: none;
+        color: #fff;
+        margin: 10px 0;
+    }
+
+    > div {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
     }
 }

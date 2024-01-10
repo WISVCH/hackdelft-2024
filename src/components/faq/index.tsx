@@ -11,7 +11,7 @@ import * as style from "./style.scss";
  * @returns The FAQ section of the page.
  */
 export const FAQ: FunctionalComponent = () => (
-    <section class={style.faq}>
+    <section class={style.faq} id='faq'>
         <h2>FAQ</h2>
         <ul>
             {faqData.map((q: Question, i: number) => (

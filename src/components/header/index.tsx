@@ -12,7 +12,7 @@ import { Icon } from "/src/components/icon";
  * Renders the header of the site.
  */
 export const Header: FunctionalComponent = () => (
-    <header class={style.header}>
+    <header class={style.header} id='home'>
         <div class={style.container}>
             <img src={icon} alt="HackDelft" />
             <div class={style.text}>

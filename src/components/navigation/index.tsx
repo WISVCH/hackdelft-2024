@@ -2,19 +2,27 @@ import * as style from "./style.scss";
 import { h, FunctionalComponent } from "preact";
 import { faStopwatch } from "@fortawesome/free-solid-svg-icons";
 import { Icon } from "/src/components/icon";
+import { Timer } from "/src/components/timer";
 
+export const Navigation: FunctionalComponent = () => {
 
-export const Navigation: FunctionalComponent = () => (
-    <section class={style.navigation}>
-        <div>
-            <a>About us</a>
-            <a>Timetable</a>
-            <a>Pictures</a>
-            <a>Themes</a>
-            <a>FAQ</a>
-            <a>Sponsors</a>
-            <a>Contact</a>
-            <span class={style.time}><span class={style.icon}><Icon icon={faStopwatch}/></span>05d 05h 05m 05s</span>
-        </div>
-    </section>
-);
+    const scrollToDiv = (target: any) => {
+        if (document.getElementById(target)){
+            window.scrollTo({top: document.getElementById(target).offsetTop})
+        }
+    }
+    return (    
+        <section class={style.navigation}>
+            <div>
+                <a onClick={() => scrollToDiv('aboutus')}>About us </a>
+                <a onClick={() => scrollToDiv('timetable')}>Timetable</a>
+                <a onClick={() => scrollToDiv('photos')}>Pictures</a>
+                <a onClick={() => scrollToDiv('themes')}>Themes</a>
+                <a onClick={() => scrollToDiv('faq')}>FAQ</a>
+                <a onClick={() => scrollToDiv('sponsors')}>Sponsors</a>
+                <a onClick={() => scrollToDiv('contact')}>Contact</a>
+                <span class={style.time}><span class={style.icon}><Icon icon={faStopwatch}/></span><Timer></Timer></span>
+            </div>
+        </section>
+    );
+}

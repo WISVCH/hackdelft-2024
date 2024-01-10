@@ -3,6 +3,7 @@
 
 .navigation {
     border: 5px solid $primary-color;
+    display: none;
 
     div {
         display: flex;
@@ -20,4 +21,10 @@
             vertical-align: middle;
         }
     } 
+}
+
+@include breakpoint(lg) {
+    .navigation {
+        display: block;
+    }
 }

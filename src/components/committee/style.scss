@@ -1,77 +1,94 @@
 @import "./src/variables";
 @import "./src/mixins";
 
-.container {
-    width: calc(100% - 16px);
-    display: flex;
-    flex-direction: column;
-    margin: 0 8px;
-}
-
-.image {
-    flex: 2;
-    align-self: center;
-
-    img {
-        width: 100%;
-        border: 4px solid $secondary-color;
-        border-radius: 12px;
-        box-sizing: border-box;
-        object-fit: cover;
-    }
-}
-
 .committee {
-    flex: 3;
+    margin-bottom: 100px;
 
     h2 {
         color: $primary-color;
         margin-bottom: 0;
-    }
-
-    h3 {
-        color: $secondary-color;
-        margin-top: 0;
-        padding: 0;
-    }
-
-    table {
-        border-collapse: collapse;
+        font-size: 48px;
+        font-family: "Krona-One";
+        margin-bottom: 50px;
         width: 100%;
-        line-height: 1.4;
+        text-align: center;
+
     }
 
-    tr {
-        border-bottom: 1px dotted $secondary-color;
-
-        &:last-child {
-            border-bottom: none;
-        }
-    }
-
-    th {
-        float: left;
-        display: contents;
-        color: mix($primary-color, $primary-text, 80%);
-    }
-
-    td {
-        white-space: nowrap;
-    }
-}
-
-@include breakpoint(lg) {
-    .container {
-        flex-direction: row;
-        width: 100%;
+    p {
         margin: 0;
+        font-family: "Krona-One";
+        font-size: 28px;
     }
 
-    .committee {
-        margin-left: 16px;
+    .function {
+        color: $primary-color;
+    }
 
-        tr {
-            border-bottom: none;
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .left {
+        width: 50%;
+        gap: 24px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right {
+        width: 50%;
+        text-align: right;
+        gap: 24px;
+        display: flex;
+        flex-direction: column;
+
+        .person {
+            justify-content: flex-end;
         }
+    }
+
+    .middle {
+        width: 100%;
+        text-align: center;
+        margin-top: 24px;
+
+        .person {
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+    }
+
+    img {
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        height: 160px;
+        width: 150px;
+        min-width: 150px;
+        object-fit: cover;
+        position: relative;
+    }
+
+    .polygon {
+        height: 170px;
+        width: 160px;
+        min-width: 160px;
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        background-color: $primary-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .person {
+        display: flex;
+        align-items: center;
+        gap: 40px;
     }
 }

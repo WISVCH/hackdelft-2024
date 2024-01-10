@@ -51,7 +51,7 @@ export const Photos: FunctionalComponent = () => {
     }, []);
 
     return (
-        <section class={style.photos}>
+        <section class={style.photos} id='photos'>
             <h2>Photos</h2>
             <div
                 ref={gallery}
