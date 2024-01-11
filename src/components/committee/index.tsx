@@ -32,6 +32,11 @@ const Marijn = new URL(
     import.meta.url
 );
 
+const Simon = new URL(
+    "/static/members/Simon.jpg?as=webp",
+    import.meta.url
+);
+
 
 
 /**
@@ -91,7 +96,7 @@ export const Committee: FunctionalComponent = () => (
                             <p class={style.name}>Simon Deuten</p>
                         </div>
                         <div class={style.polygon}>
-                            <img src={Marit as any} alt="HackDelft Committee" />
+                            <img src={Simon as any} alt="HackDelft Committee" />
                         </div>
                     </div>
 
