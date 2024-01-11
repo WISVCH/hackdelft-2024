@@ -115,7 +115,7 @@ const Photo: FunctionalComponent<PhotoProps> = (props) => {
                 <div class={style.fullimage}>
                     <div class={style.navigation}>
                         <div
-                            class={`${style.arrow} ${style.leftArrow}`}
+                            class={`${style.arrow}`}
                             onClick={(e) => {
                                 e.stopPropagation(); 
                                 navigate(-1);
@@ -124,7 +124,7 @@ const Photo: FunctionalComponent<PhotoProps> = (props) => {
                             &lt;
                         </div>
                         <div
-                            class={`${style.arrow} ${style.rightArrow}`}
+                            class={`${style.arrow}`}
                             onClick={(e) => {
                                 e.stopPropagation(); // Stop event propagation
                                 navigate(1);
