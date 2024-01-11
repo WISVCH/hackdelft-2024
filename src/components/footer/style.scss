@@ -1,27 +1,48 @@
 @import "./src/variables";
+@import "./src/mixins";
+
 
 .footer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    margin-bottom: 20px;
+    gap: 16px;
+
+    .container {
+        display: flex;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+        gap: 16px;
+    }
 
     p {
         color: $primary-color;
         font-family: "Krona-One";
-        font-size: 34px;
-        margin: 10px 0;
+        font-size: 16px;
+        margin: 0;
     }
 
     a {
         font-family: "Krona-One";
-        font-size: 34px;
+        font-size: 16px;
         text-decoration: none;
         color: #fff;
-        margin: 10px 0;
     }
 
-    > div {
+    .innercontainer {
         display: flex;
         flex-direction: column;
         width: 30%;
     }
 }
+
+@include breakpoint(md) {
+    .footer .container {
+        flex-direction: row;
+        gap: 0;
+    }
+}
+

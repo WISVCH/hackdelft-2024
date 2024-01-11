@@ -7,7 +7,7 @@
     h2 {
         color: $primary-color;
         margin-bottom: 0;
-        font-size: 48px;
+        font-size: 38px;
         font-family: "Krona-One";
         margin-bottom: 50px;
         width: 100%;
@@ -18,7 +18,7 @@
     p {
         margin: 0;
         font-family: "Krona-One";
-        font-size: 28px;
+        font-size: 16px;
     }
 
     .function {
@@ -26,6 +26,8 @@
     }
 
     .container {
+        flex-direction: column;
+        flex-wrap: nowrap;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -34,51 +36,47 @@
         margin-right: auto;
     }
 
-    .left {
-        width: 50%;
+    .left, .right {
         gap: 24px;
         display: flex;
         flex-direction: column;
+        width: 100%;
+        text-align: left;
     }
 
     .right {
-        width: 50%;
-        text-align: right;
-        gap: 24px;
-        display: flex;
-        flex-direction: column;
-
-        .person {
-            justify-content: flex-end;
-        }
+        margin-top: 24px;
     }
 
+    .right .person{
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+
+    
     .middle {
         width: 100%;
-        text-align: center;
         margin-top: 24px;
 
         .person {
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
+            flex-direction: row;
             gap: 20px;
         }
     }
 
     img {
         clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-        height: 160px;
-        width: 150px;
-        min-width: 150px;
+        height: 100px;
+        width: 90px;
+        min-width: 90px;
         object-fit: cover;
         position: relative;
     }
 
     .polygon {
-        height: 170px;
-        width: 160px;
-        min-width: 160px;
+        height: 110px;
+        width: 100px;
+        min-width: 100px;
         clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
         background-color: $primary-color;
         display: flex;
@@ -89,6 +87,48 @@
     .person {
         display: flex;
         align-items: center;
-        gap: 40px;
+        gap: 20px;
     }
 }
+
+@include breakpoint(md) {
+    .committee {
+        h2 {
+            font-size: 48px;
+        }
+
+        .container {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .left {
+            width: 50%;
+        }
+    
+        .right {
+            width: 50%;
+            text-align: right;
+            margin-top: 0;
+    
+            .person {
+                justify-content: flex-end;
+                flex-direction: row;
+            }
+        }
+    
+        .middle {
+            width: 100%;
+            text-align: center;
+            margin-top: 24px;
+    
+            .person {
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+        }
+    }
+}
+

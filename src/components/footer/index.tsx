@@ -11,32 +11,34 @@ import * as style from "./style.scss";
  */
 export const Footer: FunctionalComponent = () => {
     const scrollToDiv = (target: any) => {
-        if (document.getElementById(target)){
-            window.scrollTo({top: document.getElementById(target).offsetTop})
+        if (document.getElementById(target)) {
+            window.scrollTo({ top: document.getElementById(target).offsetTop })
         }
     }
 
     return (
         <footer>
             <section class={style.footer}>
-            <div>
-                    <p>Site</p>
-                    <a onClick={() => scrollToDiv('home')}>Home</a>
-                    <a onClick={() => scrollToDiv('aboutus')}>About us </a>
-                    <a onClick={() => scrollToDiv('timetable')}>Timetable</a>
-                    <a onClick={() => scrollToDiv('photos')}>Pictures</a>
-                    <a onClick={() => scrollToDiv('themes')}>Themes</a>
-                    <a onClick={() => scrollToDiv('faq')}>FAQ</a>
-                    <a onClick={() => scrollToDiv('sponsors')}>Sponsors</a>
+                <div class={style.container}>
+                    <div class={style.innercontainer}>
+                        <p>Site</p>
+                        <a onClick={() => scrollToDiv('home')}>Home</a>
+                        <a onClick={() => scrollToDiv('aboutus')}>About us </a>
+                        <a onClick={() => scrollToDiv('timetable')}>Timetable</a>
+                        <a onClick={() => scrollToDiv('photos')}>Pictures</a>
+                        <a onClick={() => scrollToDiv('themes')}>Themes</a>
+                        <a onClick={() => scrollToDiv('faq')}>FAQ</a>
+                        <a onClick={() => scrollToDiv('sponsors')}>Sponsors</a>
+                    </div>
+                    <div class={style.innercontainer}>
+                        <p>Contact</p>
+                        <a title="Send us an email!"
+                            href="mailto:hackdelft@ch.tudelft.nl"
+                            target="_blank"
+                            rel="noopener"> hackdelft@ch.tudelft.nl </a>
+                    </div>
                 </div>
-                <div>
-                    <p>Contact</p>
-                    <a title="Send us an email!"
-                        href="mailto:hackdelft@ch.tudelft.nl"
-                        target="_blank"
-                        rel="noopener"> hackdelft@ch.tudelft.nl </a>
-                </div>
-        </section>
-    </footer>
+            </section>
+        </footer>
     );
 }
