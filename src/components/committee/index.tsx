@@ -22,6 +22,16 @@ const Robert = new URL(
     import.meta.url
 );
 
+const Merle = new URL(
+    "/static/members/Merle.jpg?as=webp",
+    import.meta.url
+);
+
+const Marijn = new URL(
+    "/static/members/Marijn.jpg?as=webp",
+    import.meta.url
+);
+
 
 
 /**
@@ -56,7 +66,7 @@ export const Committee: FunctionalComponent = () => (
                     </div>
                     <div class={style.person}>
                         <div class={style.polygon}>
-                            <img src={Marit as any} alt="HackDelft Committee" />
+                            <img src={Merle as any} alt="HackDelft Committee" />
                         </div>
                         <div>
                             <p class={style.function}>Treasure</p>
@@ -71,7 +81,7 @@ export const Committee: FunctionalComponent = () => (
                             <p class={style.name}>Marijn van der Tuin</p>
                         </div>
                         <div class={style.polygon}>
-                            <img src={Marit as any} alt="HackDelft Committee" />
+                            <img src={Marijn as any} alt="HackDelft Committee" />
                         </div>
                     </div>
 
