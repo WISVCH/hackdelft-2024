@@ -4,19 +4,19 @@
             "id": "sa1",
             "time": "12:00 - 13:00",
             "name": "Walk-in",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            "description": "More information will follow soon..."
         },
         {
             "id": "sa2",
             "time": "13:00 - 14:00",
             "name": "Opening",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+            "description": "More information will follow soon..."
         },
         {
             "id": "sa3",
             "time": "14:00 - 00:00",
             "name": "Hacking!",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+            "description": "More information will follow soon..."
         },
         {
             "id": "sa4",
@@ -30,7 +30,7 @@
             "id": "su1",
             "time": "00:00 - 14:00",
             "name": "Hacking!",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+            "description": "More information will follow soon..."
         },
         {
             "id": "su2",
@@ -48,13 +48,13 @@
             "id": "su4",
             "time": "14:30 - 16:00",
             "name": "Networking Drinks",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+            "description": "More information will follow soon..."
         },
         {
             "id": "su5",
             "time": "16:00 - 17:00",
             "name": "Award Ceremony",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+            "description": "More information will follow soon..."
         }
     ]
 }

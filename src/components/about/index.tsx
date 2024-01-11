@@ -5,7 +5,7 @@ import { Icon } from "/src/components";
 import * as style from "./style.scss";
 
 /**
- * Renders the about section.
+ * Renders the about section. 
  */
 export const About: FunctionalComponent = () => (
     <section class={style.about} id="aboutus">

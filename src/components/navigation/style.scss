@@ -3,8 +3,9 @@
 
 .navigation {
     border: 5px solid $primary-color;
+    display: none;
 
-    div {
+    > div {
         display: flex;
         gap: 16px;
         font-size: 20px;
@@ -12,12 +13,22 @@
 
         .time {
             margin-left: auto;
-            margin-right: 0;;
+            margin-right: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .icon {
             color: $secondary-color;
             margin: 0 8px;
             vertical-align: middle;
+            display: flex;
         }
     } 
+}
+
+@include breakpoint(lg) {
+    .navigation {
+        display: block;
+    }
 }

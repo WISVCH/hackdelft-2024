@@ -1,0 +1,17 @@
+@import "./src/mixins";
+@import "./src/variables";
+
+.timer {
+    display: flex;
+
+    > div {
+        gap: 0;
+
+    }
+
+    span {
+        color: $secondary-color;
+        margin-right: 8px;
+        margin-left: -4px;
+    }
+}
