@@ -2,10 +2,22 @@ import { h, FunctionalComponent } from "preact";
 
 import * as style from "./style.scss";
 
-const picture = new URL(
-    "/static/committee.png?as=webp&width=1200",
+const Marjolein = new URL(
+    "/static/members/Marjolein.jpg?as=webp",
     import.meta.url
 );
+
+const Scott = new URL(
+    "/static/members/Scott.jpg?as=webp",
+    import.meta.url
+);
+
+const Marit = new URL(
+    "/static/members/Marit.jpg?as=webp",
+    import.meta.url
+);
+
+
 
 /**
  * Renders the committee section.
@@ -21,7 +33,7 @@ export const Committee: FunctionalComponent = () => (
                 <div class={style.left}>
                     <div class={style.person}>
                         <div class={style.polygon}>
-                            <img src={picture as any} alt="HackDelft Committee" />
+                            <img src={Marit as any} alt="HackDelft Committee" />
                         </div>
                         <div>
                             <p class={style.function}>Chair</p>
@@ -30,7 +42,7 @@ export const Committee: FunctionalComponent = () => (
                     </div>
                     <div class={style.person}>
                         <div class={style.polygon}>
-                            <img src={picture as any} alt="HackDelft Committee" />
+                            <img src={Marjolein as any} alt="HackDelft Committee" />
                         </div>
                         <div>
                             <p class={style.function}>Secretary</p>
@@ -39,7 +51,7 @@ export const Committee: FunctionalComponent = () => (
                     </div>
                     <div class={style.person}>
                         <div class={style.polygon}>
-                            <img src={picture as any} alt="HackDelft Committee" />
+                            <img src={Marit as any} alt="HackDelft Committee" />
                         </div>
                         <div>
                             <p class={style.function}>Treasure</p>
@@ -54,7 +66,7 @@ export const Committee: FunctionalComponent = () => (
                             <p class={style.name}>Marijn van der Tuin</p>
                         </div>
                         <div class={style.polygon}>
-                            <img src={picture as any} alt="HackDelft Committee" />
+                            <img src={Marit as any} alt="HackDelft Committee" />
                         </div>
                     </div>
 
@@ -64,7 +76,7 @@ export const Committee: FunctionalComponent = () => (
                             <p class={style.name}>Simon Deuten</p>
                         </div>
                         <div class={style.polygon}>
-                            <img src={picture as any} alt="HackDelft Committee" />
+                            <img src={Marit as any} alt="HackDelft Committee" />
                         </div>
                     </div>
 
@@ -74,14 +86,14 @@ export const Committee: FunctionalComponent = () => (
                             <p class={style.name}>Scott Jochems</p>
                         </div>
                         <div class={style.polygon}>
-                            <img src={picture as any} alt="HackDelft Committee" />
+                            <img src={Scott as any} alt="HackDelft Committee" />
                         </div>
                     </div>
                 </div>
                 <div class={style.middle}>
                     <div class={style.person}>
                         <div class={style.polygon}>
-                            <img src={picture as any} alt="HackDelft Committee" />
+                            <img src={Marit as any} alt="HackDelft Committee" />
                         </div>
                         <div>
                             <p class={style.function}>Qualitate Qua</p>
