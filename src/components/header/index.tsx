@@ -26,10 +26,10 @@ export const Header: FunctionalComponent = () => (
                 {/* TODO: uncomment when tickets are online */}
                 {/* <button>Tickets</button> */}
                 {/* <button class={style.secondary}>Join Discord</button> */}
-                <button href="https://discord.gg/rB2ucUaFnc" target="_blank">
+                <a href="https://discord.gg/rB2ucUaFnc" target="_blank">
                     <Icon icon={faDiscord} pad />
                     Join Discord
-                </button>
+                </a>
             </div>
         </div>
         

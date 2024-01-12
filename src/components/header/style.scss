@@ -33,7 +33,7 @@
         margin-top: 60px;
     }
 
-    button {
+    a {
         border-radius: 10px;
         border: 1px solid $background-color;
         background-color: $primary-color;
@@ -41,6 +41,11 @@
         font-size: 18px;
         padding: 10px 15px;
         width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        margin-bottom: 16px;
 
         &:hover {
             background-color: $primary-color-darker;
