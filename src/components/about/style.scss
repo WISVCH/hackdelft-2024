@@ -2,7 +2,8 @@
 @import "./src/variables";
 
 .about {
-    margin-bottom: 32px;
+    margin-bottom: 32px; 
+
 
     h2 {
         color: $primary-color;
@@ -16,8 +17,42 @@
         padding-left: 2px;
     }
 
+    h3 {
+        font-family: "Krona-One";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+        margin: 0;
+        padding-left: 2px;
+    }
+
+    .columns {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .column {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding: 20px;
+        justify-content: flex-start;
+    }
+    
+
     p {
         margin: 8px;
+        margin-bottom: 50px;
+
+        font-family: "Krona-One";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
 
         a {
             color: $primary-color;

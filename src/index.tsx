@@ -1,4 +1,5 @@
 import { Fragment, h, render } from "preact";
+import * as style from "./global.scss";
 
 import {
     About,
@@ -6,6 +7,8 @@ import {
     FAQ,
     Footer,
     Header,
+    Numbers,
+    Navigation,
     Photos,
     Sponsors,
     Timeline,
@@ -20,6 +23,10 @@ const start = (): void => {
     render(
         <Fragment>
             <Header />
+            <div class={style.gradient}>
+                <Navigation />
+                <Numbers />
+            </div>
             <About />
             <Photos />
             <Timeline />

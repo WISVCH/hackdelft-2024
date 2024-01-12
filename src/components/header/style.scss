@@ -3,42 +3,80 @@
 
 .header {
     display: flex;
-    flex-direction: column;
-    margin-top: 32px;
+    flex-direction: column; 
+    height: 100vh;
+    min-height: 100vh;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, $background-color 100%,), url('../../../static/banner.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
 
-    img {
-        height: 4em;
-        margin: 0 auto;
+    .container {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 700px;
     }
 
-    span {
-        margin: 16px 2vw;
+    .text {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 30px;
+    }
 
-        h2 {
-            margin: 0;
-            white-space: nowrap;
-            color: $primary-color;
-        }
+    .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 60px;
+    }
 
-        h3 {
-            margin: 0;
-            white-space: nowrap;
-            color: $secondary-color;
+    a {
+        border-radius: 10px;
+        border: 1px solid $background-color;
+        background-color: $primary-color;
+        color: $background-color;
+        font-size: 18px;
+        padding: 10px 15px;
+        width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        margin-bottom: 16px;
+
+        &:hover {
+            background-color: $primary-color-darker;
+            cursor: pointer;
         }
+    }
+
+    button.secondary {
+        border: 1px solid $primary-color;
+        color: $primary-color;
+        background-color: $background-color;
+    }
+
+    p {
+        color: $primary-color;
+        font-size: 24px;
+        font-family: "Krona-One";
     }
 }
 
-@include breakpoint(sm) {
-    .header {
-        flex-direction: row;
-        margin-bottom: 24px;
+// @include breakpoint(sm) {
+//     .header {
+//         flex-direction: row;
+//         margin-bottom: 24px;
 
-        img {
-            margin: 0;
-        }
+//         img {
+//             margin: 0;
+//         }
 
-        span {
-            margin: 0 2vw;
-        }
-    }
-}
+//         span {
+//             margin: 0 2vw;
+//         }
+//     }
+// }

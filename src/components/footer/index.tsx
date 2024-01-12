@@ -9,22 +9,35 @@ import * as style from "./style.scss";
 /**
  * Renders the footer of the site.
  */
-export const Footer: FunctionalComponent = () => (
-    <footer class={style.footer}>
-        <a
-            title="Send us an email!"
-            href="mailto:hackdelft@ch.tudelft.nl"
-            target="_blank"
-            rel="noopener"
-        >
-            <Icon icon={faEnvelope} pad />
-        </a>
-        <a
-            title="View source code."
-            href="https://github.com/WISVCH/hackdelft-2022"
-            target="_BLANK"
-        >
-            <Icon icon={faGithub} pad />
-        </a>
-    </footer>
-);
+export const Footer: FunctionalComponent = () => {
+    const scrollToDiv = (target: any) => {
+        if (document.getElementById(target)) {
+            window.scrollTo({ top: document.getElementById(target).offsetTop })
+        }
+    }
+
+    return (
+        <footer>
+            <section class={style.footer}>
+                <div class={style.container}>
+                    <div class={style.innercontainer}>
+                        <p>Site</p>
+                        <a onClick={() => scrollToDiv('home')}>Home</a>
+                        <a onClick={() => scrollToDiv('aboutus')}>About us </a>
+                        <a onClick={() => scrollToDiv('photos')}>Pictures</a>
+                        <a onClick={() => scrollToDiv('timetable')}>Timetable</a>
+                        <a onClick={() => scrollToDiv('sponsors')}>Sponsors</a>
+                        <a onClick={() => scrollToDiv('faq')}>FAQ</a>                      
+                    </div>
+                    <div class={style.innercontainer}>
+                        <p>Contact</p>
+                        <a title="Send us an email!"
+                            href="mailto:hackdelft@ch.tudelft.nl"
+                            target="_blank"
+                            rel="noopener"> hackdelft@ch.tudelft.nl </a>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    );
+}

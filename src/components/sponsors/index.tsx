@@ -11,7 +11,7 @@ import * as style from "./style.scss";
  * Renders the sponsors section.
  */
 export const Sponsors: FunctionalComponent = () => (
-    <section class={style.sponsors}>
+    <section class={style.sponsors} id='sponsors'>
         <h2>Sponsors</h2>
         {sponsorData.map((sponsor: SponsorCategory) => sponsorItem(sponsor))}
     </section>
@@ -26,30 +26,43 @@ export const sponsorItem = (category: SponsorCategory) => {
 
     return (
         <Fragment>
-            <h3>{category.title}</h3>
-            <p>More too be announced!</p>
-            <ul class={style.sponsorlist}>
-                {sponsors.map((sponsor: Sponsor) => (
-                    <li key={sponsor.logoKey} data-type={category.type}>
-                        <a
-                            href={sponsor.url}
-                            target="_blank"
-                            rel="noopener"
-                            title={sponsor.title}
-                        >
-                            <div class={style.img}>
-                                <img
-                                    src={sponsorLogoMap[
-                                        sponsor.logoKey
-                                    ].toString()}
-                                    alt={sponsor.title}
-                                />
-                            </div>
-                            <p>{sponsor.title}</p>
-                        </a>
-                    </li>
-                ))}
-            </ul>
+            <div>
+                {/* <h3>{category.title}</h3> */}
+                <ul class={style.sponsorlist}>
+                    {sponsors.map((sponsor: Sponsor) => (
+                        <li key={sponsor.logoKey} data-type={category.type}>
+
+                            <a
+                                href={sponsor.url}
+                                target="_blank"
+                                rel="noopener"
+                                title={sponsor.title}
+                            >
+
+                                <div class={style.topbar}>
+                                    <hr />
+                                </div>
+
+                                <div class={style.img}>
+                                    <img
+                                        src={sponsorLogoMap[
+                                            sponsor.logoKey
+                                        ].toString()}
+                                        alt={sponsor.title}
+                                    />
+
+                                </div>
+                                <p>{sponsor.title}</p>
+
+                                <div class={style.bottombar}>
+                                    <hr />
+                                </div>
+
+                            </a>
+                        </li>
+                    ))}
+                </ul>
+            </div>
         </Fragment>
     );
 };
