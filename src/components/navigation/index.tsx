@@ -15,7 +15,7 @@ export const Navigation: FunctionalComponent = () => {
         <section class={style.navigation}>
             <div>
                 <a onClick={() => scrollToDiv('aboutus')}>About us </a>
-                <a onClick={() => scrollToDiv('photos')}>Pictures</a>
+                <a onClick={() => scrollToDiv('pictures')}>Pictures</a>
                 <a onClick={() => scrollToDiv('timetable')}>Timetable</a>
                 <a onClick={() => scrollToDiv('sponsors')}>Sponsors</a>
                 <a onClick={() => scrollToDiv('faq')}>FAQ</a>
