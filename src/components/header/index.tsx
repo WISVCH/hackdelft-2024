@@ -23,9 +23,6 @@ export const Header: FunctionalComponent = () => (
                 <p> <Icon icon={faLocationDot}/> X TU Delft</p>
             </div>
             <div class={style.buttons}>
-                {/* TODO: uncomment when tickets are online */}
-                {/* <button>Tickets</button> */}
-                {/* <button class={style.secondary}>Join Discord</button> */}
                 <a href="https://ch.tudelft.nl/activities/event/2024/hackaton/" target="_blank">
                     <Icon icon={faTicket} pad />
                     Buy Tickets
