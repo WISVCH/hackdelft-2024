@@ -14,7 +14,7 @@ export const About: FunctionalComponent = () => (
             <div class={style.column}>
                 <h3>What?</h3>
                 <p>
-                    Embark on an exciting journey with Hack to the Future, a fully inclusive 24-hour hackathon experience. Immerse yourself in a dynamic environment where participants take on entertaining challenges presented by our amazing partner companies. Beyond the thrill of problem-solving, the event offers the chance to win exciting prizes and guarantees a good time for all involved. A brunch is also offered on sunday for this you will have to buy an different brunch ticket.
+                    Embark on an exciting journey with Hack to the Future, a fully inclusive 24-hour hackathon experience. Immerse yourself in a dynamic environment where participants take on entertaining challenges presented by our amazing partner companies. Beyond the thrill of problem-solving, the event offers the chance to win exciting prizes and guarantees a good time for all involved. A brunch is also offered on sunday. To join this you will have to buy a different brunch ticket.
                 </p>
                 <h3>Who?</h3>
                 <p>
