@@ -2,19 +2,19 @@
     "saturday": [
         {
             "id": "sa1",
-            "time": "11:00 - 12:00",
+            "time": "11:30 - 12:00",
             "name": "Walk-in",
             "description": "More information will follow soon..."
         },
         {
             "id": "sa2",
-            "time": "12:00 - 13:00",
+            "time": "12:00 - 13:30",
             "name": "Opening",
             "description": "More information will follow soon..."
         },
         {
             "id": "sa3",
-            "time": "13:00 - 00:00",
+            "time": "13:30 - 00:00",
             "name": "Hacking!",
             "description": "More information will follow soon..."
         },
@@ -34,7 +34,7 @@
     "sunday": [
         {
             "id": "su1",
-            "time": "00:00 - 13:00",
+            "time": "00:00 - 13:30",
             "name": "Hacking!",
             "description": "More information will follow soon..."
         },
