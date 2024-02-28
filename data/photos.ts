@@ -2,10 +2,10 @@
 // This is required as the bundler (currently) cannot currently read the contents of the photo folder
 export const photosMap: URL[] = [
     new URL("/static/photos/DSC_0001.jpg?as=webp&width=1200", import.meta.url),
+    new URL("/static/photos/DSC_0519.jpg?as=webp&width=1200", import.meta.url),
     new URL("/static/photos/DSC_0032.jpg?as=webp&width=1200", import.meta.url),
     new URL("/static/photos/DSC_0511.jpg?as=webp&width=1200", import.meta.url),
     new URL("/static/photos/DSC_0515.jpg?as=webp&width=1200", import.meta.url),
-    new URL("/static/photos/DSC_0519.jpg?as=webp&width=1200", import.meta.url),
     new URL("/static/photos/DSC_0537.jpg?as=webp&width=1200", import.meta.url),
     new URL("/static/photos/DSC_0544.jpg?as=webp&width=1200", import.meta.url),
     new URL("/static/photos/DSC_0556.jpg?as=webp&width=1200", import.meta.url),
