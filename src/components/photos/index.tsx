@@ -53,8 +53,8 @@ export const Photos: FunctionalComponent = () => {
     }, []);
 
     return (
-        <section class={style.photos} id='photos'>
-            <h2>Photos</h2>
+        <section class={style.photos} id='pictures'>
+            <h2>Pictures</h2>
             <div ref={galleryContainer} class={style.galleryContainer}>
                 <div
                     ref={gallery}

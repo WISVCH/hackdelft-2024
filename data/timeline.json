@@ -2,24 +2,30 @@
     "saturday": [
         {
             "id": "sa1",
-            "time": "12:00 - 13:00",
+            "time": "11:30 - 12:00",
             "name": "Walk-in",
             "description": "More information will follow soon..."
         },
         {
             "id": "sa2",
-            "time": "13:00 - 14:00",
+            "time": "12:00 - 13:30",
             "name": "Opening",
             "description": "More information will follow soon..."
         },
         {
             "id": "sa3",
-            "time": "14:00 - 00:00",
+            "time": "13:30 - 00:00",
             "name": "Hacking!",
             "description": "More information will follow soon..."
         },
         {
             "id": "sa4",
+            "time": "16:30 - 17:30",
+            "name": "Pitch workshop",
+            "description": "More information will follow soon..."
+        },
+        {
+            "id": "sa5",
             "time": "18:30 - 20:00",
             "name": "Dinner",
             "description": ""
@@ -28,30 +34,18 @@
     "sunday": [
         {
             "id": "su1",
-            "time": "00:00 - 14:00",
+            "time": "00:00 - 13:30",
             "name": "Hacking!",
             "description": "More information will follow soon..."
         },
         {
             "id": "su2",
-            "time": "8:00 - 10:00",
-            "name": "Breakfast",
-            "description": ""
+            "time": "8:00 - 14:30",
+            "name": "Brunch",
+            "description": "In order to join the brunch you will have to buy a ticket. More information will follow soon... "
         },
         {
             "id": "su3",
-            "time": "12:30 - 14:30",
-            "name": "Lunch",
-            "description": ""
-        },
-        {
-            "id": "su4",
-            "time": "14:30 - 16:00",
-            "name": "Networking Drinks",
-            "description": "More information will follow soon..."
-        },
-        {
-            "id": "su5",
             "time": "16:00 - 17:00",
             "name": "Award Ceremony",
             "description": "More information will follow soon..."

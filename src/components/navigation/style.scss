@@ -5,10 +5,13 @@
     border: 5px solid $primary-color;
     display: none;
 
+
+
     > div {
         display: flex;
         gap: 16px;
         font-size: 20px;
+        font-family: "Krona-One";
         margin: 4px 8px;
 
         .time {

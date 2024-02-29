@@ -24,7 +24,7 @@ export const Footer: FunctionalComponent = () => {
                         <p>Site</p>
                         <a onClick={() => scrollToDiv('home')}>Home</a>
                         <a onClick={() => scrollToDiv('aboutus')}>About us </a>
-                        <a onClick={() => scrollToDiv('photos')}>Pictures</a>
+                        <a onClick={() => scrollToDiv('pictures')}>Pictures</a>
                         <a onClick={() => scrollToDiv('timetable')}>Timetable</a>
                         <a onClick={() => scrollToDiv('sponsors')}>Sponsors</a>
                         <a onClick={() => scrollToDiv('faq')}>FAQ</a>                      

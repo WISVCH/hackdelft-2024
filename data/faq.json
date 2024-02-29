@@ -1,15 +1,19 @@
 [
     {
         "question": "Who can attend?",
-        "answer": "Any current university student can attend HackDelft."
+        "answer": "Any student can attend HackDelft."
     },
     {
         "question": "How can I sign up for HackDelft?",
-        "answer": "Ticket sales are not open yet so check back here soon!"
+        "answer": "Buy a ticket at: https://ch.tudelft.nl/activities/event/2024/hackaton/ and don't forget to fill in the form at: wisv.ch/hackform"
     },
     {
         "question": "What languages can I use during the event?",
         "answer": "You can use any language or tool you want during the event!"
+    },
+    {
+        "question": "I don't have a group yet. Can I still sign up?",
+        "answer": "Of course! You can use the discord to find others still searching for a group. Haven't found a group yet on the day itself? No problem we can help you find a group during the event."
     },
     {
         "question": "What is the maximum group size?",
@@ -29,7 +33,7 @@
     },
     {
         "question": "How much will it cost to attend HackDelft?",
-        "answer": "The price has not been determined yet so check back here soon!"
+        "answer": "If you are a CH member tickets will be € 1,- and non-CH members will have to pay € 3,−. If you also want to attend the brunch on Sunday you will have to buy a brunch ticket for € 1,-"
     },
     {
         "question": "What do I need to bring to the event?",
