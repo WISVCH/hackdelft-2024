@@ -4,25 +4,25 @@
             "id": "sa1",
             "time": "11:30 - 12:00",
             "name": "Walk-in",
-            "description": "More information will follow soon..."
+            "description": "During this time you can sign in with your team. If you don't have a team yet you can use this time to form some teams aswell. You can also already choose your table and setup your stuff."
         },
         {
             "id": "sa2",
             "time": "12:00 - 13:30",
             "name": "Opening",
-            "description": "More information will follow soon..."
+            "description": "The companies will present their cases to you in the opening. After the presentation the cases will be divided overall groups according to your preferences. During this time we will also finalize the teams."
         },
         {
             "id": "sa3",
             "time": "13:30 - 00:00",
             "name": "Hacking!",
-            "description": "More information will follow soon..."
+            "description": "You have 24 hours to create your solution. Good luck!"
         },
         {
             "id": "sa4",
             "time": "16:30 - 17:30",
             "name": "Pitch workshop",
-            "description": "More information will follow soon..."
+            "description": "A pitch workshop will take place in which you will learn how to create the perfect pitch. This will be helpfull when you have to pitch your solution to the judges at the end of the contest."
         },
         {
             "id": "sa5",
@@ -36,19 +36,25 @@
             "id": "su1",
             "time": "00:00 - 13:30",
             "name": "Hacking!",
-            "description": "More information will follow soon..."
+            "description": "You have 24 hours to create your solution. Good luck!"
         },
         {
             "id": "su2",
             "time": "8:00 - 14:30",
             "name": "Brunch",
-            "description": "In order to join the brunch you will have to buy a ticket. More information will follow soon... "
+            "description": "In order to join the brunch you will have to buy a ticket. You can buy this at wisv.ch/hackticket "
         },
         {
             "id": "su3",
+            "time": "13:30 - 16:00",
+            "name": "Judging",
+            "description": "You will have to present a short pitch to the judges."
+        },
+        {
+            "id": "su4",
             "time": "16:00 - 17:00",
             "name": "Award Ceremony",
-            "description": "More information will follow soon..."
+            "description": "During this ceremony we will hand out prizes to the winners of each case"
         }
     ]
 }
