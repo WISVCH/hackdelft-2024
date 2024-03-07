@@ -1,5 +1,5 @@
 import { h, FunctionalComponent } from "preact";
-import { faCalendarDay, faLocationDot, faTicket } from "@fortawesome/free-solid-svg-icons";
+import { faCalendarDay, faLocationDot, faTicket, faClipboardList } from "@fortawesome/free-solid-svg-icons";
 import { faDiscord } from "@fortawesome/free-brands-svg-icons";
 
 
@@ -30,6 +30,10 @@ export const Header: FunctionalComponent = () => (
                 <a href="https://discord.gg/rB2ucUaFnc" target="_blank">
                     <Icon icon={faDiscord} pad />
                     Join Discord
+                </a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScIeFxdTOsJnt7DQdpYPtcRsrYT-wHJDa2N1bVtCJNFaQtSIQ/viewform" target="_blank">
+                    <Icon icon={faClipboardList} pad />
+                    Sign-up form
                 </a>
             </div>
         </div>
