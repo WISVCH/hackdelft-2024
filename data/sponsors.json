@@ -14,5 +14,16 @@
                 "title": "X TU Delft"
             }
         ]
+    },
+    {
+        "type": "primary",
+        "title": "Primary",
+        "items": [
+            {
+                "logoKey": "navara",
+                "url": "https://www.navara.nl/",
+                "title": "Navara"
+            }
+        ]
     }
 ]
