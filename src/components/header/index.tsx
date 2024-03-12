@@ -19,7 +19,7 @@ export const Header: FunctionalComponent = () => (
             <img src={icon} alt="HackDelft" />
             <div class={style.text}>
                 
-                <p> <Icon icon={faCalendarDay}/> 25 and 26 may 2024</p>
+                <p> <Icon icon={faCalendarDay}/> 25 and 26 May 2024</p>
                 <p> <Icon icon={faLocationDot}/> X TU Delft</p>
             </div>
             <div class={style.buttons}>
