@@ -6,4 +6,5 @@ export const sponsorLogoMap: { [key: string]: URL } = {
         "/static/sponsors/xtudelft.png?as=webp&width=200",
         import.meta.url
     ),
+    navara: new URL("/static/sponsors/nav_logo_navy_diap_rgb.png?as=webp&width=200", import.meta.url),
 };
