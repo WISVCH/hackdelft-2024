@@ -66,7 +66,7 @@ export const Committee: FunctionalComponent = () => (
                         </div>
                         <div>
                             <p class={style.function}>Secretary</p>
-                            <p class={style.name}>Marjolein van der Berghe</p>
+                            <p class={style.name}>Marjolein van den Berghe</p>
                         </div>
                     </div>
                     <div class={style.person}>
