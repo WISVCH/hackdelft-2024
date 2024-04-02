@@ -27,7 +27,7 @@ export const sponsorItem = (category: SponsorCategory) => {
     return (
         <Fragment>
             <div>
-                {/* <h3>{category.title}</h3> */}
+                {<h3>{category.title}</h3>}
                 <ul class={style.sponsorlist}>
                     {sponsors.map((sponsor: Sponsor) => (
                         <li key={sponsor.logoKey} data-type={category.type}>
