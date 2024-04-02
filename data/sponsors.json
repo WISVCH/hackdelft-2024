@@ -25,5 +25,16 @@
                 "title": "Navara"
             }
         ]
+    },
+    {
+        "type": "secondary",
+        "title": "Secondary",
+        "items": [
+            {
+                "logoKey": "unipartners",
+                "url": "https://www.unipartners.nl/",
+                "title": "UniPartners"
+            }
+        ]
     }
 ]

@@ -7,4 +7,5 @@ export const sponsorLogoMap: { [key: string]: URL } = {
         import.meta.url
     ),
     navara: new URL("/static/sponsors/nav_logo_navy_diap_rgb.png?as=webp&width=200", import.meta.url),
+    unipartners: new URL("/static/sponsors/UniPartners-Logo.png?as=webp&width=200", import.meta.url)
 };
