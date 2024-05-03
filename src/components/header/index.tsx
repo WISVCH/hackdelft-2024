@@ -32,7 +32,7 @@ export const Header: FunctionalComponent = () => (
                     Sign-up form
                 </a>
 
-                <p> Unfortunatly the event is sold out but you can sign up for the waiting list below and have a chance of still claiming a spot!</p>
+                <small> Unfortunatly the event is sold out but you can sign up for the waiting list below and have a chance of still claiming a spot!</small>
                 {/* <a href="https://ch.tudelft.nl/activities/event/2024/hackaton/" target="_blank">
                     <Icon icon={faTicket} pad />
                     Buy Tickets
