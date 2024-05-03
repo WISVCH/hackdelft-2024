@@ -18,7 +18,7 @@ export const Numbers: FunctionalComponent = () => (
             </div>
 
             <div class={style.column}>
-                <h2>3</h2>
+                <h2>4</h2>
                 <h3>cases</h3>
             </div>
 

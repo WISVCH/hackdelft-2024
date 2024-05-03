@@ -23,10 +23,6 @@ export const Header: FunctionalComponent = () => (
                 <p> <Icon icon={faLocationDot}/> X TU Delft</p>
             </div>
             <div class={style.buttons}>
-                <a href="https://ch.tudelft.nl/activities/event/2024/hackaton/" target="_blank">
-                    <Icon icon={faTicket} pad />
-                    Buy Tickets
-                </a>
                 <a href="https://discord.gg/rB2ucUaFnc" target="_blank">
                     <Icon icon={faDiscord} pad />
                     Join Discord
@@ -35,6 +31,18 @@ export const Header: FunctionalComponent = () => (
                     <Icon icon={faClipboardList} pad />
                     Sign-up form
                 </a>
+
+                <p> Unfortunatly the event is sold out but you can sign up for the waiting list below and have a chance of still claiming a spot!</p>
+                {/* <a href="https://ch.tudelft.nl/activities/event/2024/hackaton/" target="_blank">
+                    <Icon icon={faTicket} pad />
+                    Buy Tickets
+                </a> */}
+                
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd6cXDC7eyLyKr7F8pDm-0kJvlPPoUGydYaqSLxeHh8XIsePg/viewform?usp=sf_link" target="_blank">
+                    <Icon icon={faClipboardList} pad />
+                    Waiting list
+                </a>
+                {/*  */}
             </div>
         </div>
         
