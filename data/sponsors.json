@@ -23,6 +23,16 @@
                 "logoKey": "navara",
                 "url": "https://www.navara.nl/",
                 "title": "Navara"
+            },
+            {
+                "logoKey": "sping",
+                "url": "https://sping.nl/",
+                "title": "Sping"
+            },
+            {
+                "logoKey": "jetbrains",
+                "url": "https://www.jetbrains.com/",
+                "title": "JetBrains"
             }
         ]
     },
