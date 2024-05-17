@@ -22,7 +22,7 @@
             "id": "sa4",
             "time": "16:30 - 17:30",
             "name": "Pitch workshop",
-            "description": "A pitch workshop will take place in which you will learn how to create the perfect pitch. This will be helpfull when you have to pitch your solution to the judges at the end of the contest."
+            "description": "A pitch workshop will take place in which you will learn how to create the perfect pitch. This will be helpfull when you have to pitch your solution to the judges at the end of the contest. The workshop is provided by UniPartners"
         },
         {
             "id": "sa5",
@@ -40,18 +40,24 @@
         },
         {
             "id": "su2",
-            "time": "8:00 - 14:30",
+            "time": "9:00 - 09:30",
+            "name": "Morning Gymnastics",
+            "description": "Do you want to start the day of right? Join Marjolein for a healthy and energetic gymnastics session."
+        },
+        {
+            "id": "su3",
+            "time": "9:30 - 14:30",
             "name": "Brunch",
             "description": "In order to join the brunch you will have to buy a ticket. You can buy this at wisv.ch/hackticket "
         },
         {
-            "id": "su3",
+            "id": "su4",
             "time": "13:30 - 16:00",
             "name": "Judging",
             "description": "You will have to present a short pitch to the judges."
         },
         {
-            "id": "su4",
+            "id": "su5",
             "time": "16:00 - 17:00",
             "name": "Award Ceremony",
             "description": "During this ceremony we will hand out prizes to the winners of each case"

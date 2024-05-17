@@ -30,7 +30,7 @@
     .buttons {
         display: flex;
         justify-content: center;
-        gap: 30px;
+        gap: 20px;
         flex-wrap: wrap;
     }
 
@@ -69,7 +69,7 @@
 
     small {
         color: $primary-color;
-        font-size: 16px;
+        font-size: 14px;
         font-family: "Krona-One";
     }
 }

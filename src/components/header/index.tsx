@@ -20,7 +20,7 @@ export const Header: FunctionalComponent = () => (
             <div class={style.text}>
                 
                 <p> <Icon icon={faCalendarDay}/> 25 and 26 May 2024</p>
-                <p> <Icon icon={faLocationDot}/> X TU Delft</p>
+                <p> <Icon icon={faLocationDot}/> X TU Delft Hall 1</p>
             </div>
             <div class={style.buttons}>
                 <a href="https://discord.gg/rB2ucUaFnc" target="_blank">
