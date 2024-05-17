@@ -6,7 +6,7 @@ import * as style from "./style.scss";
 
 export const Timer: FunctionalComponent = () => {
     const calculateTimeLeft = () => {
-        const difference = (new Date("2024-05-25T13:00:00")).valueOf() - (new Date()).valueOf()
+        const difference = (new Date("2024-05-25T13:30:00")).valueOf() - (new Date()).valueOf()
 
         let timeLeft = {};
 
