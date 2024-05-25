@@ -8,13 +8,13 @@
         },
         {
             "id": "sa2",
-            "time": "12:00 - 13:30",
+            "time": "12:00 - 14:00",
             "name": "Opening",
             "description": "The companies will present their cases to you in the opening. After the presentation the cases will be divided overall groups according to your preferences. During this time we will also finalize the teams."
         },
         {
             "id": "sa3",
-            "time": "13:30 - 00:00",
+            "time": "14:00 - 00:00",
             "name": "Hacking!",
             "description": "You have 24 hours to create your solution. Good luck!"
         },
@@ -34,7 +34,7 @@
     "sunday": [
         {
             "id": "su1",
-            "time": "00:00 - 13:30",
+            "time": "00:00 - 14:00",
             "name": "Hacking!",
             "description": "You have 24 hours to create your solution. Good luck!"
         },
@@ -52,7 +52,7 @@
         },
         {
             "id": "su4",
-            "time": "13:30 - 16:00",
+            "time": "14:00 - 16:00",
             "name": "Judging",
             "description": "You will have to present a short pitch to the judges."
         },
